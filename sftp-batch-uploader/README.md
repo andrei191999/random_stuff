@@ -1,8 +1,5 @@
 # SFTP Batch Uploader
 
-> **Descriere scurtă pentru colegi (RO):**
-> Aplicație cu interfață grafică pentru upload în batch de fișiere prin SFTP. Configurezi host-ul, userul și parola (sau cheia SSH), selectezi fișierele sau un folder întreg, și le uploadezi automat — cu delay configurabil între fișiere, opțiune de test pe primele N fișiere înainte de a continua, și un delay de start programat (util dacă vrei să pornești upload-ul mai târziu). Nu necesită Python instalat — rulează direct din fișierul `.exe`.
-
 ---
 
 ## Overview
