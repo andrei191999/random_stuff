@@ -22,12 +22,33 @@
 
 ## How to Use
 
-### Option A — Run the executable (no Python needed)
+### Option A — Windows: Run the executable (no Python needed)
 
 1. Download `sftp_gui.exe` from this folder
 2. Double-click to run — no installation required
 
-### Option B — Run from source
+### Option B — macOS: Run from source
+
+Tkinter on macOS requires Python installed from **[python.org](https://www.python.org/downloads/)** (not Homebrew or pyenv — those often ship without Tcl/Tk).
+
+```bash
+# 1. Install Python from https://www.python.org/downloads/  (3.10 or newer)
+# 2. Open Terminal and install the dependency:
+pip3 install paramiko
+
+# 3. Run the app:
+python3 sftp_gui.py
+```
+
+> **Note:** A standalone macOS `.app` bundle cannot be built from Windows.
+> To build one on a Mac, install Python + pyinstaller there and run:
+>
+> ```bash
+> pip3 install paramiko pyinstaller
+> pyinstaller --noconsole --onefile sftp_gui.py
+> ```
+
+### Option C — Windows: Run from source
 
 ```bash
 pip install paramiko
@@ -73,6 +94,14 @@ pyinstaller --noconsole --onefile sftp_gui.py
 ```
 
 ---
+
+## Compatibility
+
+| Platform | Method           | Notes                                                         |
+| -------- | ---------------- | ------------------------------------------------------------- |
+| Windows  | `.exe` or source | Fully supported                                               |
+| macOS    | Source only      | Requires Python from python.org (includes Tcl/Tk for tkinter) |
+| Linux    | Source only      | Requires `python3-tk` (`sudo apt install python3-tk`)         |
 
 ## Requirements (source only)
 
