@@ -1,7 +1,5 @@
 # SFTP Batch Uploader
 
----
-
 ## Overview
 
 **SFTP Batch Uploader** is a lightweight Windows desktop application (built with Python + Tkinter) that lets you upload batches of files to any SFTP server through a simple GUI. It is distributed as a single standalone `.exe` — no Python installation required.
